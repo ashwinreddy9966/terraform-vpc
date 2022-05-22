@@ -3,6 +3,6 @@
 #}
 
 module "vpc" {
-  source = "./vendor/modules/vpc"
+  source = "./vendor/modules/vpc" # we made this as the source as Terrafile places the remote source module and place here
   VPC_CIDR = var.VPC_CIDR
 }
