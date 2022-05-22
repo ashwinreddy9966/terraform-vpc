@@ -3,10 +3,11 @@
 #}
 
 module "vpc" {
-  source          = "./vendor/modules/vpc" # we made this as the source as Terrafile places the remote source module and place here
-  VPC_CIDR        = var.VPC_CIDR
-  ENV             = var.ENV
-  AZ              = var.AZ
-  SUBNET_CIDR     = var.SUBNET_CIDR
-  DEFAULT_VPC_ID  = var.DEFAULT_VPC_ID
+  source           = "./vendor/modules/vpc" # we made this as the source as Terrafile places the remote source module and place here
+  VPC_CIDR         = var.VPC_CIDR
+  ENV              = var.ENV
+  AZ               = var.AZ
+  SUBNET_CIDR      = var.SUBNET_CIDR
+  DEFAULT_VPC_ID   = var.DEFAULT_VPC_ID
+  DEFAULT_VPC_CIDR = var.DEFAULT_VPC_CIDR
 }
